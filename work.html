@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"/>
+      <link rel="icon" type="image/x-icon" href="favicon.png">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap" rel="stylesheet">
+    <title>Navneet Setia</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    section{
+        display:none;
+    }
+</style>
+<script>
+function showpage(page){
+        document.querySelectorAll('section').forEach(section =>{
+            section.style.display='none';
+        } )
+        document.querySelector(`#${page}`).style.display='block';
+};
+
+document.addEventListener("DOMContentLoaded",()=>{
+            document.querySelectorAll('#buttton').forEach(button=>{
+                button.onclick=function(){
+                  console.log(this.dataset.page)
+                  document.querySelector("body").style.background=button.dataset.color;
+                    showpage(this.dataset.page);
+                }
+            })
+        });
+
+
+
+</script>
+
+<body style="color: aliceblue;">
+  <div class="all">
+    <div class="cover">
+        <div id="loader" class="center"></div> 
+              <nav class="navbar  navbar-expand-sm navbar-dark shadow-10-strong">
+                <a class="navbar-brand" href= "index.html" style=" font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-size: 25px;text-decoration: solid;"><img src="Transparent Navneet Name onlyyy.png" width="150" height="50" class="d-inline-block align-top" alt=""></a>                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link "  href="test.html">
+                          About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="work.html">
+                          Work
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="test.html#contact">
+                      Get in Touch
+                      </a>
+                  </li>   
+                    </ul>
+            </nav>
+<div>
+        <div class="row adjust">
+            <div class="col-4" style="align-items: center;border-color: antiquewhite;"><center>
+                <div class="wrapper">
+                    <div class="img-area" id="green" style="margin-top: 50px;">
+                        <img src="test4.png" alt="" class="img-box box-5" width="10px;" height="50px">
+                        <img src="test4.png" alt="" class="img-box box-6" width="25px" height="50px">
+                   
+                        <img src="test2.png" alt="" width="150px" height="200px" class="img-box box-1" >
+                        <img src="test3.png" alt="" class="img-box box-2" width="150px" height="200px">
+                        <button style="color: aliceblue;"   class="btn btn-outline-success button5 img-box box-4" data-page="page1" data-color="#629162" id="buttton" >Know More</button>
+                        <img src="test1.png" alt="" class="img-box box-3" width="150px" height="200px">
+                        </div>
+                </div>
+                </div>
+            <div class="col-4" style="align-items: center;border-color: antiquewhite;"><center>
+                    <div class="wrapper">
+                        <div class="img-area" style="margin-top: 50px;">
+                            <img src="Network4.png" alt="" class="img-box box-5" width="10px;" height="50px">
+                            <img src="Network4.png" alt="" class="img-box box-6" width="25px" height="50px">
+                       
+                            <img src="Network2.png" alt="" width="150px" height="200px" class="img-box box-1" >
+                            <img src="Network3.png" alt="" class="img-box box-2" width="150px" height="200px">
+                            <button  type="button" class="btn btn-outline-light button5 img-box box-4 purple" data-color="#8f29ef" id="buttton" data-page="page2">Know More</button>
+
+                            <img src="Network1.png" alt="" class="img-box box-3" width="50px" height="200px">
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-" style="align-items: center;border-color: rgb(124, 121, 117);"><center>
+                        <div class="wrapper">
+                            <div class="img-area" style="margin-top: 50px;">
+                                <img src="wiki4.png" alt="" class="img-box box-5" width="10px;" height="50px">
+                                <img src="wiki4.png" alt="" class="img-box box-6" width="25px" height="50px">
+                                <img src="Wiki2.png" alt="" width="50px" height="200px" class="img-box box-1" >
+                                <img src="wiki3.png" alt="" class="img-box box-2" width="50px" height="200px">
+                                <button type="button"  id="buttton" class="btn btn-outline-light button5 img-box box-4 blue" data-color="deepskyblue" data-page="page3">Know More</button>
+                                <img src="wiki1.png" alt="" class="img-box box-3" width="50px" height="200px">
+                            </div>
+                            
+                        </div>
+                        </div>
+        </div></center>
+        </div>
+        
+<section id="page1" style="margin-top:200px ;">
+    
+  <div class="row adjust" class="div_hide"  style="margin-top:250px ;">
+      <div class="col-5" style="align-items: center;border-color: antiquewhite;"><center>
+          <div id="carouselExampleIndicators" data-interval="5000" class="carousel slide control" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="test5.png" height="380px" width="100px" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="test5.png" alt="Second slide" height="380px" width="100px">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="test5.png" alt="Third slide" height="380px" width="100px">
+                </div>
+              </div>
+              
+            </div>
+          </div>
+      <div class="col-7 adjust1">
+          <h1>Django Personal Website</h1>
+          <p>In this website I have used <b> Django</b> as a Backend Language and <b>HTML,CSS and JavaScript</b> as a FrontEnd Language. <br> This is one of my personal websites where I have presented my Projects as a way that client can view them.<br> Also another great feature of this website is that a user can drop his/her information  so that we can contact him. It can be done by just Logging on the website. </p>
+          <button type="button" onclick="location.href='https://youtu.be/CIGhZmUFJ5I'" class="btn btn-outline-light">View Live</button>
+          <button type="button" onclick="location.href='https://github.com/setia08/Django-Personal-Website.git'" style="margin-left: 20px;" class="btn btn-outline-light">Source Code</button>
+
+      </div>
+  </div></center>
+</section>
+        
+
+<section id="page2">
+        <div class="row adjust" class="div_hide" style="margin-top:250px ;">
+            <div class="col-7 adjust1" >
+                <h1>Social Networking Website</h1>
+                <p>This website works similar to Instagram or facebook where users can upload their picture,idea & thoughts and other people can read and like their post.
+                Here we have used Djnago as a Back-End Language and HTML,CSS and JavaScript as FrontEnd Language.  
+                </p>               
+                </a><button type="button" onclick="location.href='https://youtu.be/2J10sliqCFE'" class="btn btn-outline-light"> View Live</button>
+                <button type="button" style="margin-left: 20px;" onclick="location.href='https://github.com/setia08/Network.git'"class="btn btn-outline-light">Source Code</button>
+
+            </div>
+                <div class="col-5" style="align-items: center;border-color: antiquewhite;"><center>
+                    <div id="carouselExampleIndicators" data-interval="5000" class="carousel slide control" data-ride="carousel">
+                        
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="Network5.png" height="380px" width="100px" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="Network5.png" alt="Second slide" height="380px" width="100px">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="Network5.png" alt="Third slide" height="380px" width="100px">
+                          </div>
+                        </div>
+                       
+                      </div>
+                </div>
+            
+        </div></center>
+    </section>
+<section id="page3">
+        <div class="row adjust" class="div_hide" style="margin-top:250px ;" >
+            <div class="col-5" style="align-items: center;border-color: antiquewhite;"><center>
+                <div id="carouselExampleIndicators" data-interval="5000" class="carousel slide control" data-ride="carousel">
+                    
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="d-block w-100" src="wiki5.png" height="380px" width="100px" alt="First slide">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="wiki5.png" alt="Second slide" height="380px" width="100px">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="d-block w-100" src="wiki5.png" alt="Third slide" height="380px" width="100px">
+                      </div>
+                    </div>
+                    
+                  </div>
+            </center></div>
+            <div class="col-7 adjust1"><h1>Wikipedia Prototype</h1>
+                <p>This Website provides service where user can search a topic & get related Article.<br> Here user can their desired  add pages. There is an edit option as well where you can edit an already existing page.<br> Language majorly used in <b>Djnago</b>. </p>
+                <button type="button" onclick="location.href='https://youtu.be/GDpPrNQoC2Q'" class="btn btn-outline-light">View Live</button>
+                <button type="button" style="margin-left: 20px;" onclick="location.href='https://github.com/setia08/wikipedia-prototype.git'" class="btn btn-outline-light">Source Code</button>
+            </div>
+        </div></center></section>
+
+        <div class="row adjust" style="margin-top: 200px;">
+          <div class="col-4" style="align-items: center;border-color: antiquewhite;"><center>
+              <div class="wrapper">
+                  <div class="img-area" id="green" style="margin-top: 50px;">
+                      <img src="Gmail4.png" alt="" class="img-box box-5" width="10px;" height="50px">
+                      <img src="Gmail4.png" alt="" class="img-box box-6" width="25px" height="50px">
+                 
+                      <img src="Gmail2.png" alt="" width="150px" height="200px" class="img-box box-1" >
+                      <img src="Gmail3.png" alt="" class="img-box box-2" width="150px" height="200px">
+                      <button style="color: aliceblue;"   class="btn btn-outline-success button5 img-box box-4 yellow" data-page="page4" data-color="#9e7c0c" id="buttton" >Know More</button>
+                      <img src="Gmail1.png" alt="" class="img-box box-3" width="150px" height="200px">
+                      </div>
+              </div>
+              </div>
+          <div class="col-4" style="align-items: center;border-color: antiquewhite;"><center>
+                  <div class="wrapper">
+                      <div class="img-area" style="margin-top: 50px;">
+                          <img src="E-commerce4.png" alt="" class="img-box box-5" width="10px;" height="50px">
+                          <img src="E-commerce4.png" alt="" class="img-box box-6" width="25px" height="50px">
+                     
+                          <img src="E-commerce2.png" alt="" width="150px" height="200px" class="img-box box-1" >
+                          <img src="E-commerce3.png" alt="" class="img-box box-2" width="150px" height="200px">
+                          <button  type="button" class="btn btn-outline-light button5 img-box box-4 pink " data-color="#b81f6c" id="buttton" data-page="page5">Know More</button>
+
+                          <img src="E-commerce1.png" alt="" class="img-box box-3" width="50px" height="200px">
+                      </div>
+                  </div>
+                  </div>
+                  <div class="col-4" style="align-items: center;border-color: rgb(124, 121, 117);"><center>
+                      <div class="wrapper">
+                          <div class="img-area" style="margin-top: 50px;">
+                              <img src="search4.png" alt="" class="img-box box-5" width="10px;" height="50px">
+                              <img src="search4.png" alt="" class="img-box box-6" width="25px" height="50px">
+                              <img src="search2.png" alt="" width="50px" height="200px" class="img-box box-1" >
+                              <img src="search3.png" alt="" class="img-box box-2" width="50px" height="200px">
+                              <button type="button"  id="buttton" class="btn btn-outline-light button5 img-box box-4 light-blue" data-color="#1f70b7" data-page="page6">Know More</button>
+                              <img src="search1.png" alt="" class="img-box box-3" width="50px" height="200px">
+                          </div>
+                          
+                      </div>
+                      </div>
+      </div></center>
+      </div><br><br><br><br><br><br>
+        
+
+
+        <section id="page4">
+          <div class="row adjust" class="div_hide" style="margin-top:100px ;">
+              <div class="col-7 adjust1 " >
+                  <h1>Gmail Prototype</h1>
+                  <p>This website works same as Gmail or Yahoo where a user can send email to specific mail id . Here user can also reply to the conversation/email received.<br>There are few other options as well such as Archive where you can hide a mail from inbox. <br>Also we have Option of Sent and Archive in Navbar where we can view sent and archive mails. <br> As it is a Backend project we have used <b> Djnago</b>.  </p>               
+                  </a><button type="button" onclick="location.href='https://youtu.be/BL__iRm3zYo'" class="btn btn-outline-light"> View Live</button>
+                  <button type="button" style="margin-left: 20px;" onclick="location.href='https://github.com/setia08/Gmail-prototype.git'" class="btn btn-outline-light">Source Code</button>
+  
+              </div>
+                  <div class="col-5" style="align-items: center;border-color: antiquewhite;"><center>
+                      <div id="carouselExampleIndicators" data-interval="5000" class="carousel slide control" data-ride="carousel">
+                          
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img class="d-block w-100" src="Gmail5.png" height="380px" width="100px" alt="First slide">
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="Gmail5.png" alt="Second slide" height="380px" width="100px">
+                            </div>
+                            <div class="carousel-item">
+                              <img class="d-block w-100" src="Gmail5.png" alt="Third slide" height="380px" width="100px">
+                            </div>
+                          </div>
+                         
+                        </div>
+                  </div>
+              
+          </div></center>
+      </section>
+      <section id="page5">
+        <div class="row adjust" class="div_hide" style="margin-top:100px ;">
+            <div class="col-7 adjust1" >
+                <h1>E-Commerce Site</h1>
+                <p>Ebay is a commonly used website where people buy/sell products here I have recreated the same. <br>Here we can bid amount and add our Favorite product to our Wishlist.<br> After the auction is closed the person with highest bid wins the bid and the product is sold to them . <br>This interesting project is made with <b>Djnago</b> a Back-End Language.</p>               
+                </a><button type="button" onclick="location.href='https://youtu.be/mhsenFwmsH4'" class="btn btn-outline-light"> View Live</button>
+                <button type="button" style="margin-left: 20px;" onclick="location.href='https://github.com/setia08/Ebay-Prototype.git'" class="btn btn-outline-light">Source Code</button>
+
+            </div>
+                <div class="col-5" style="align-items: center;border-color: antiquewhite;"><center>
+                    <div id="carouselExampleIndicators" data-interval="5000" class="carousel slide control" data-ride="carousel">
+                       
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img class="d-block w-100" src="E-commerce5.png" height="380px" width="100px" alt="First slide">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="E-commerce5.png" alt="Second slide" height="380px" width="100px">
+                          </div>
+                          <div class="carousel-item">
+                            <img class="d-block w-100" src="E-commerce5.png" alt="Third slide" height="380px" width="100px">
+                          </div>
+                        </div>
+                       
+                      </div>
+                </div>
+            
+        </div></center>
+    </section>
+    <section id="page6">
+      <div class="row adjust" class="div_hide" style="margin-top:100px ;">
+          <div class="col-7 adjust1" >
+              <h1>Google Search </h1>
+              <p>This is a Front-End Project using <b>HTML & CSS</b>. <br>Here I have recreated Google Search Page in Dark theme. <br>This project includes 3 pages:-
+                <ul style="margin-left:50px;list-style:circle;"><li> 1st page is just Google Search. </li><li> 2nd page includes Google Image Search. </li><li> 3rd Page is Google Advance Search.</li></ul>All pages work perfectly and show results according to user input. </p>               
+              </a><button type="button" onclick="location.href='https://youtu.be/Kct0hsHZ5yk'" class="btn btn-outline-light"> View Live</button>
+              <button type="button" style="margin-left: 20px;" onclick="location.href='https://github.com/setia08/google-search.git'" class="btn btn-outline-light">Source Code</button>
+
+          </div>
+              <div class="col-5" style="align-items: center;border-color: antiquewhite;"><center>
+                  <div id="carouselExampleIndicators" class="carousel slide control" data-interval="5000" data-ride="carousel">
+                     
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img class="d-block w-100" src="search5.png" height="380px" width="100px" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="search5.png" alt="Second slide" height="380px" width="100px">
+                        </div>
+                        <div class="carousel-item">
+                          <img class="d-block w-100" src="search5.png" alt="Third slide" height="380px" width="100px">
+                        </div>
+                      </div>
+                    
+                    </div>
+              </div>
+          
+      </div></center>
+  </section>
+        </div>
+</div></div>
+<br><br><br>
+</body>
+</html>
