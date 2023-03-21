@@ -4,7 +4,7 @@
 
 body{
     color: #fff;
-    background-color: #000;
+    background-color: #00000098;
     overflow-x: hidden;   
 }
 
@@ -322,7 +322,7 @@ body:has(.hover_test:hover) .text-1{
     transform: translate(-320px, 500px);    
   }
   100% {
-    transform: translate(0px, 0px);
+    transform: translate(-200px, 0px);
   }
 }
 
@@ -337,7 +337,7 @@ body:has(.hover_test:hover) .text-2{
      
   }
   100% {
-    transform: translate(100px, 00px);
+    transform: translate(-50px, 00px);
   }
 }
 body:has(.hover_test:hover) .text-3{
@@ -348,7 +348,7 @@ body:has(.hover_test:hover) .text-3{
     transform: translate(-10px, 200px);    
   }
   100% {
-    transform: translate(200px, 0px);
+    transform: translate(100px, 0px);
   }
 }
 body:has(.hover_test:hover) .text-4{
@@ -361,7 +361,7 @@ body:has(.hover_test:hover) .text-4{
        
   }
   100% {
-    transform: translate(300px, 0px);
+    transform: translate(250px, 0px);
   }
 }
 body:has(.hover_test:hover) .text-5{
@@ -386,7 +386,7 @@ body:has(.hover_test:hover) .text-6{
     transform: translate(7200px, 600px);    
   }
   100% {
-    transform: translate(500px, 00px);
+    transform: translate(550px, 00px);
   }
 }
 body:has(.hover_test:hover) .text-7{
@@ -397,7 +397,7 @@ body:has(.hover_test:hover) .text-7{
     transform: translate(720px, 500px);    
   }
   100% {
-    transform: translate(600px,00px);
+    transform: translate(700px,00px);
   }
 }
 
@@ -413,9 +413,9 @@ body:has(.hover_test:hover) .text-7{
   height: 130px;
   width: 600px;
   font-family: 'Rubik Iso', cursive;
-  color: burlywood;!important;
+  color: rgb(225, 204, 230);!important;
   text-align: center;
-  font-size: 130px;
+  font-size: 200px;
 }
 
 
@@ -786,12 +786,12 @@ body:has(.hover_test:hover) .my_UFO{
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 0px #eeeeee, 0 0 5px #000000, 0 0 10px #000000, 0 0 15px #000000, 
-                 0 0 20px #545ab3, 0 0 15px #6cd5e6, 0 0 20px #62e8fd;
+    text-shadow:   0 0 15px #000000, 
+                 0 0 20px #803f89, 0 0 15px #9f6ce6, 0 0 20px #731aaa;
   }
   to {
-    text-shadow: 0 0 10px #eeeeee, 0 0 20px #1ab3ff, 0 0 30px #13b7e9, 0 0 40px #4dacff,
-                 0 0 25px #4db2ff, 0 0 30px #35b1f9, 0 0 40px #4da0ff;
+    text-shadow:  0 0 40px #803294,
+                 0 0 25px #9326ae, 0 0 30px #792593, 0 0 20px #6f0b9a;
   }
 }
 
@@ -802,5 +802,3 @@ body:has(.hover_test:hover) .my_UFO{
   0 0 10px #fff,
   0 0 21px #fff,
 }
-
-
