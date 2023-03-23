@@ -295,6 +295,7 @@ text-align: center;
 
 .my_UFO{
   opacity: 0;
+    z-index:-1;
 }
 
 body:has(.hover_test:hover) .hover_test{
